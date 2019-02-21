@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="main.js"></script>
+
+
+	<title>Formulario UA</title>
+	
+	
+</head>
+<body>
+	
+
+  <section class="col-4 margin_auto padding20">
+
+        <form enctype="multipart/form-data">
+			
+			<div class="row">
+				<div style="float:left;padding: 0 4% 0 0%;" class="col-6">
+                    <label>
+                        <label class="label_blanco text_shadow">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre"
+                               style="width: 100%"></label>
+                </div>
+                <div style="float:left;" class="col-6 top_none">
+                    <br id="br_none">
+                    <label>
+                        <label style="float:left;" class="label_blanco text_shadow">Apellidos</label>
+                        <input type="text" name="password_repeat" placeholder="Apellidos"
+                               style="width: 100%"></label>
+                </div>
+			</div>
+            
+            <br>
+            <label class="label_blanco text_shadow" for="edad">Edad</label>
+            <input type="number" name="edad" placeholder="25" min="18" max="99" required>
+            <br><br>
+            <div class="row">
+                <div style="float:left; padding: 0 4% 0 0%;margin-bottom: 1em" class="col-6">
+                    <label class="label_blanco text_shadow">Género</label>
+                    <div class="select">
+                        <select name="gender">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                            <option value="otro">Otro</option>
+                        </select></div>
+                </div>
+                <div style="float:left;" class="col-6">
+                    <label class="label_blanco text_shadow" for="FNacimiento">Fecha nacimiento</label>
+                    <input type="date" name="FNacimiento" required>
+                </div>
+            </div>
+
+			<button type="submit" style="cursor:pointer;">Registrarse</button>
+
+</body>
+</html>
