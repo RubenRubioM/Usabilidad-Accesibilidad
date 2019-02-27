@@ -54,3 +54,12 @@ $(document).ready(function() {
   });
 });
 
+
+
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log(profile.getAge())
+  $('#nombre').attr('value',profile.getGivenName())
+  $('#apellidos').attr('value',profile.getFamilyName())
+
+}

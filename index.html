@@ -15,7 +15,7 @@
 
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 
-	<meta name="google-signin-client_id" content="628981454940-6c1bb4u3tfpk3nllrpc1hmni9n3uh0f4.apps.googleusercontent.com">
+	<meta name="google-signin-client_id" content="628981454940-c10eqsfl3gudm948qoj804ltafr9p321.apps.googleusercontent.com">
 
 
 	<title>Formulario UA</title>
@@ -32,22 +32,21 @@
 				<div style="float:left;padding: 0 4% 0 0%;" class="col-6">
                     <label>
                         <label for="nombre" class="label_blanco text_shadow">Nombre</label>
-                        <input type="text" name="nombre" placeholder="Nombre"
-                               style="width: 100%">
+                        <input id="nombre" type="text" name="nombre" placeholder="Nombre" style="width: 100%">
                     </label>
                 </div>
                 <div style="float:left;" class="col-6 top_none">
                     <br id="br_none">
                     <label>
                         <label for="apellidos" style="float:left;" class="label_blanco text_shadow">Apellidos</label>
-                        <input type="text" name="apellidos" placeholder="Apellidos"
+                        <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos"
                                style="width: 100%"></label>
                 </div>
 			</div>
             
             <br>
             <label class="label_blanco text_shadow" for="edad">Edad</label>
-            <input type="number" name="edad" placeholder="25" min="18" max="99" required>
+            <input id="edad" type="number" name="edad" placeholder="25" min="18" max="99" required>
             <br><br>
 
             <div class="row">
@@ -120,7 +119,7 @@
 					    <label for="hijo2"><span class="text_shadow white" style="padding-right:7px;">Dos <i class="fas fa-child"></i><i class="fas fa-child"></i></span></label>
 
 					    <input type="radio" id="hijo3" name="radio-group-hijos">
-					    <label for="hijo3"><span class="text_shadow white" style="padding-right:7px;">Tres <i class="fas fa-child"></i><i class="fas fa-child"></i><i class="fas fa-child"></i></span></label>
+					    <label for="hijo3"><span class="text_shadow white" style="padding-right:7px;">+Tres <i class="fas fa-child"></i><i class="fas fa-child"></i><i class="fas fa-child"></i></span></label>
 						  
 						
 
@@ -141,6 +140,7 @@
 			</div>
             
 			<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
 			<button type="submit" style="cursor:pointer;">Registrarse</button>
 
 
