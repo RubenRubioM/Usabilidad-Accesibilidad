@@ -8,10 +8,17 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+	<meta name="google-signin-client_id" content="628981454940-djuqb76fm6off5g2j3bfbn3jrmgopnh0.apps.googleusercontent.com">
 
 
 	<title>Formulario UA</title>
-	
 	
 </head>
 <body>
@@ -24,15 +31,16 @@
 			<div class="row">
 				<div style="float:left;padding: 0 4% 0 0%;" class="col-6">
                     <label>
-                        <label class="label_blanco text_shadow">Nombre</label>
+                        <label for="nombre" class="label_blanco text_shadow">Nombre</label>
                         <input type="text" name="nombre" placeholder="Nombre"
-                               style="width: 100%"></label>
+                               style="width: 100%">
+                    </label>
                 </div>
                 <div style="float:left;" class="col-6 top_none">
                     <br id="br_none">
                     <label>
-                        <label style="float:left;" class="label_blanco text_shadow">Apellidos</label>
-                        <input type="text" name="password_repeat" placeholder="Apellidos"
+                        <label for="apellidos" style="float:left;" class="label_blanco text_shadow">Apellidos</label>
+                        <input type="text" name="apellidos" placeholder="Apellidos"
                                style="width: 100%"></label>
                 </div>
 			</div>
@@ -41,23 +49,100 @@
             <label class="label_blanco text_shadow" for="edad">Edad</label>
             <input type="number" name="edad" placeholder="25" min="18" max="99" required>
             <br><br>
-            <div class="row">
-                <div style="float:left; padding: 0 4% 0 0%;margin-bottom: 1em" class="col-6">
-                    <label class="label_blanco text_shadow">Género</label>
-                    <div class="select">
-                        <select name="gender">
-                            <option value="hombre">Hombre</option>
-                            <option value="mujer">Mujer</option>
-                            <option value="otro">Otro</option>
-                        </select></div>
-                </div>
-                <div style="float:left;" class="col-6">
-                    <label class="label_blanco text_shadow" for="FNacimiento">Fecha nacimiento</label>
-                    <input type="date" name="FNacimiento" required>
-                </div>
-            </div>
 
+            <div class="row">
+				<div style="float:left;padding: 0 4% 0 0%;" class="col-12">
+                    <label>
+                        <label for="pais" class="label_blanco text_shadow">Pais</label>
+                        <input type="text" name="pais" placeholder="Pais"
+                               style="width: 100%" id="paises">
+                    </label>
+                </div>
+                <!--
+                <div style="float:left;" class="col-6 top_none">
+                    <br id="br_none">
+                    <label>
+                        <label for="idioma" style="float:left;" class="label_blanco text_shadow">Idioma</label>
+                        <input type="text" name="idioma" placeholder="Idioma"
+                               style="width: 100%" id="idiomas"></label>
+                </div>-->
+
+                
+			</div>
+			<br>
+
+			<div class="row">
+				<div style="float:left;padding:0 4% 0 0%;" class="col-12">
+					<label class="text_shadow white">Idiomas</label>
+					<br>
+					<select id="idiomas" style="height: 50px;">
+                	
+                	</select>
+				</div>
+				
+			</div>
+			<br><br>
+			<label for="estado" class="label_blanco text_shadow">Estado</label>
+			<div class="row inputRadio">
+				<div style="float:left;padding: 4% 4% 4% 4%;" class="col-12">
+					<label>
+						
+						
+						    <input type="radio" id="test1" name="radio-group" value="Soltero" checked>
+						    <label for="test1"><span class="text_shadow white" style="padding-right:7px;">Soltero</span></label>
+						  
+						    <input type="radio" id="test2" name="radio-group" value="Casado">
+						    <label for="test2"><span class="text_shadow white" style="padding-right:7px;">Casado</span></label>
+						 
+						    <input type="radio" id="test3" name="radio-group" value="Viudo">
+						    <label for="test3"><span class="text_shadow white" style="padding-right:7px;">Viudo</span></label>
+
+						    <input type="radio" id="test4" name="radio-group" value="Otro">
+						    <label for="test4"><span class="text_shadow white" style="padding-right:7px;">Otro</span></label>
+						  
+						
+
+					</label>
+				</div>
+				
+				<div class="row" id="hijosDisplay" style="display:none;">
+					<div style="float:left;padding: 4% 4% 4% 4%;" class="col-12">
+						<label>
+						
+						<label class="text_shadow white">Numero de hijos: </label><br><br>
+					    <input type="radio" id="hijo0" name="radio-group-hijos" checked>
+					    <label for="hijo0"><span class="text_shadow white" style="padding-right:7px;"><span>Ninguno </span></label>
+					  
+					    <input type="radio" id="hijo1" name="radio-group-hijos">
+					    <label for="hijo1"><span class="text_shadow white" style="padding-right:7px;">Uno <i class="fas fa-child"></i></span></label>
+					 
+					    <input type="radio" id="hijo2" name="radio-group-hijos">
+					    <label for="hijo2"><span class="text_shadow white" style="padding-right:7px;">Dos <i class="fas fa-child"></i><i class="fas fa-child"></i></span></label>
+
+					    <input type="radio" id="hijo3" name="radio-group-hijos">
+					    <label for="hijo3"><span class="text_shadow white" style="padding-right:7px;">Tres <i class="fas fa-child"></i><i class="fas fa-child"></i><i class="fas fa-child"></i></span></label>
+						  
+						
+
+					</label>
+					</div>
+					
+				</div>
+
+				<!--Cuadro de texto para el otro-->
+				<div class="row" id="otroDisplay" style="display:none;">
+					<div class="col-12">
+                    <label>
+                        <input type="text" name="otro" placeholder="Otro..."
+                               style="width: 100%">
+                    </label>
+                </div>
+				</div>
+			</div>
+            
+			<div class="g-signin2" data-onsuccess="onSignIn"></div>
 			<button type="submit" style="cursor:pointer;">Registrarse</button>
+
 
 </body>
 </html>
