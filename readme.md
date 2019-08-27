@@ -10,7 +10,7 @@ Menu            |  Game
 :-------------------------:|:-------------------------:
 ![](pics/pic.jpg)  |  ![](pics/pic2.jpg)
 <p align="center">
-    <img src="pics/pic3.jpg" width="200px" height="200px" >
+    <img src="pics/pic3.jpg" width="400px" height="400px" >
 </p>
 ---
 
