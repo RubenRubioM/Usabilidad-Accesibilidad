@@ -9,9 +9,9 @@ Here are some pics of the games
 Menu            |  Game
 :-------------------------:|:-------------------------:
 ![](pics/pic.jpg)  |  ![](pics/pic2.jpg)
-
-<img src="pics/pic3.jpg" width="200px" height="200px" style="margin-left:30%">
-
+<p align="center">
+    <img src="pics/pic3.jpg" width="200px" height="200px" >
+</p>
 ---
 
 # Videogame 2 (Math Attack!)
