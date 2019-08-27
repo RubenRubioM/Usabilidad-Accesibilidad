@@ -12,6 +12,7 @@ Menu            |  Game
 <p align="center">
     <img src="pics/pic3.jpg" width="400px" height="400px" >
 </p>
+
 ---
 
 # Videogame 2 (Math Attack!)
